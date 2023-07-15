@@ -1,8 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+@font-face {
+  font-family: 'Bree';
+  src: url('fonts/BreeSerif-Regular.ttf') format('truetype'); /* Adjust the file path if necessary */
+  /* Add additional font weights and styles if available */
+}
+
+/*universal components */
+@layer base {
+  button {
+    @apply border border-black rounded-xl px-5 py-2;
+  }
+  body {
+    @apply bg-red-600;
+    font-family: 'Bree Serif', sans-serif;
+     color: white;
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
